@@ -604,12 +604,3 @@ body {
     }
    
 }
-
-.button-to-top{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: #1ed660;
-    right: 50px;
-    bottom: 50px;
-}
