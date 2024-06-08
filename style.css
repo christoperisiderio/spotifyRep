@@ -4,6 +4,7 @@
     font-family: 'Gramatika-Black';
 }
 
+
 @font-face {
     font-family: 'Gramatika-Black';
     src: url('Gramatika-Black.woff') format('woff');
@@ -23,7 +24,7 @@ body {
     width: 100vw;
 }
 ::-webkit-scrollbar{
-    width: 1em;
+    width: 0.8em;
 }
 ::-webkit-scrollbar-track{
     background: transparent;
@@ -48,13 +49,12 @@ body {
     max-height: auto;
 }
 .right{
-    
     overflow-y: scroll;
     overflow-x: hidden;
     margin-top: 10px;
     margin-left: 5px;
     width: 74%;
-    height: 100vh;
+    height: 88.9vh;
     max-height: auto;
     background: rgb(49, 50, 50);
     border-radius: 5px;
@@ -129,9 +129,19 @@ body {
 }
 
 .bar .innerbar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
     height: 100%;
-    width: 30%;
+    width: 21%;
     background: #fff;
+}
+.innerbar .dot{
+    width: 10px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: white;
+    transition: width 200ms;
 }
 
 
@@ -288,7 +298,7 @@ body {
     flex-direction: column;
     padding: 10px;
     overflow-y: scroll;
-    height: 58vh;
+    height: 47vh;
 }
 .inner-content{
     display: flex;
@@ -304,7 +314,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 5px;
-    
+    transition: all 500ms;
 }
 .inner-content img:hover{
     width: 60px;
@@ -325,6 +335,11 @@ body {
     }
 }
 
+.inner-content:hover{
+    background: rgb(74, 76, 78);
+    font-size: 18px;
+    color: #1ed660;
+}
 
 .inner-content .info{
     display: flex;
@@ -333,19 +348,10 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-.info > h4{
-    color: #fff;
-}
 
 .info p{
     color: rgb(205, 211, 214);
     font-size: 12px;
-}
-
-.inner-content:hover{
-    background: rgb(74, 76, 78);
-    font-size: 18px;
-    color: #1ed660;
 }
 
 .header-right{
@@ -475,9 +481,7 @@ body {
     width: 100%;
     background: rgb(28, 29, 30);
 }
-.musics > iframe{
-    margin-bottom: 9px;
-}
+
 .musics .music-title{
     color: rgb(205, 211, 214);
     font-size: 12px;
