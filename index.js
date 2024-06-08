@@ -1,10 +1,24 @@
 const progressbar = document.querySelector("#barr");
+const photo = document.querySelector("#photo");
 const dot = document.getElementById('dott');
 const innerBar = document.querySelector(".innerbar");
 innerContents = document.querySelectorAll(".inner-content");
 const bar = document.querySelector('.bar');
+const image = document.querySelector("#img");
 
 document.addEventListener('DOMContentLoaded', function (){
+
+    image.addEventListener("mouseover", () => {
+        image.style.filter = "brightness(0.5)";
+        photo.style.opacity = "1";
+    });
+    image.addEventListener("mouseout", () => {
+        image.style.filter = "";
+        photo.style.opacity = "0";
+    });
+
+
+
 
 
     dot.addEventListener('mousedown', function(event) {
